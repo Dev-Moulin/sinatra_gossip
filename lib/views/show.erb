@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> The potin</title>
+    </head>
+    <body>
+        <h1>Voir un potin tin tin!!! !</h1>
+        <%# <a href="/gossips/new/:id">le potin rechercher</a>
+
+            <form action="/gossips/new/:id" method="get">
+            recherche popot' : <input type="text" name="id"/>
+            <input type="submit"/>
+            </form>
+
+        <h1>Ma super recherche eclater au sol!!</h1>
+        <a href="/gossips/new/:id">Les recherche gogole-potin!</a>
+          <% gossips.each_with_index do |lien| %>
+        <%# <p> %>
+            <%# <%= gossip.id %> 
+        <%# </p> %>
+            <%# <% end %> 
+            
+        <h1>Voici le potin recherché :</h1>
+        <p>Auteur : <%= @gossip.author %></p>
+        <p>Contenu : <%= @gossip.content %></p>
+    
+        <a href="/">Retour à l'accueil</a>
+  
+    </body>
+
+</html>
+
